@@ -1,3 +1,5 @@
+using IMS.UseCases.Activities.Interfaces;
+using IMS.UseCases.Activities;
 using IMS.UseCases.Inventories;
 using IMS.UseCases.Inventories.Interfaces;
 using IMS.UseCases.Products;
@@ -23,6 +25,15 @@ builder.Services.AddTransient<IViewProductsByNameUseCase, ViewProductsByNameUseC
 builder.Services.AddTransient<IAddProductUseCase, AddProductUseCase>();
 builder.Services.AddTransient<IViewProductByIdUseCase, ViewProductByIdUseCase>();
 builder.Services.AddTransient<IEditProductUseCase, EditProductUseCase>();
+
+builder.Services.AddTransient<IPurchaseInventoryUseCase, PurchaseInventoryUseCase>();
+//builder.Services.AddTransient<IProduceProductUseCase, ProduceProductUseCase>();
+//builder.Services.AddTransient<ISellProductUseCase, SellProductUseCase>();
+
+//builder.Services.AddTransient<ISearchInventoryTransactionsUseCase, SearchInventoryTransactionsUseCase>();
+//builder.Services.AddTransient<ISearchProductTransactionsUseCase, SearchProductTransactionsUseCase>();
+
+
 
 var app = builder.Build();
 
