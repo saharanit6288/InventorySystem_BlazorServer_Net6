@@ -8,7 +8,8 @@
 
 @inject IJSRuntime JSRuntime
 
-@attribute [Authorize(Policy = "Purchasers")]
+@* @attribute [Authorize(Policy = "Purchasers")] *@
+@attribute [Authorize(Policy = "Admin")]
 
 <h3>Purchase Inventory</h3>
 <br />
