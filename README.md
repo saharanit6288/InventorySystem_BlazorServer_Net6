@@ -1,7 +1,7 @@
 # Inventory Management System App (IMS)
 A Demo Inventory Managaement System created using Blazor Server and .NET6 EFCore
 
-[https://bulkybook1.azurewebsites.net/](https://ims1.azurewebsites.net/)
+https://ims1.azurewebsites.net/
 
 # Useful Links:
 
